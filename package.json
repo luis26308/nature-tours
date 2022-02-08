@@ -7,7 +7,8 @@
   "description": "Learning node, express, and mongoDB",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "Luis Diaz",
   "license": "ISC",
@@ -28,6 +29,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
+    "ndb": "^1.1.5",
     "prettier": "^2.5.1"
   }
 }
