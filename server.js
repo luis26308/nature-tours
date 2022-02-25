@@ -26,6 +26,7 @@ const server = app.listen(port, () => {
   console.log(`App running on port http://localhost:${port}...`);
 });
 
+// An event-listener that is triggered by an unhandled rejection (failed DB connection) and shuts down server
 process.on('unhandledRejection', (err) => {
   console.log(err.name, err.message);
   console.log('UNHANDLED REJECTION');
@@ -34,6 +35,7 @@ process.on('unhandledRejection', (err) => {
   });
 });
 
+// An event-listener that is triggered by an uncaught exception (undeclared variable usage) and shuts down server
 process.on('uncaughtException', (err) => {
   console.log('UNCAUGHT EXCEPTION');
   console.log(err.name, err.message);
